@@ -21,6 +21,7 @@ Hay que establecer un estilo arquitectónico para el sistema de la compañía de
 
 * 0001-1-Arquitectura-Cliente-Servidor-tres-capas.md
 * 0001-2-Arquitectura-Cliente-Servidor-dos-capas.md
+* 0001-03-Arquitectura-por-capas.md
 
 ## Decision Outcome
 
@@ -42,3 +43,10 @@ Frente al modelo propuesto en la opción anterior, esta arquitectura C/S se limi
 
 * Good, because Conserva gran parte de las ventajas expuestas anteriormente de arquitecturas C/S mientras mantiene las bases de datos accesibles en caso de inoperancia del servidor central.
 * Bad, because Fuerza diversificar las relaciones que guardan los componentes con las bases de datos complicando el mantenimiento y la escalabilidad del sistema.
+
+### 0001-03-Arquitectura-por-capas.md
+
+El sistema se divide en diversas capas: una de intermediación, otra de lógica de negocio y otra de utilidades para los clientes PC y móvil.
+
+* Good, because La separación en capas favorece la creación de una capa de mensajería (Gestión pedidos) que ayuda a que el procesamiento se realice en varios nodos que podrían ayudar a diversificar la carga evitando así la necesidad de usar un servidor centralizado.
+* Bad, because Puede suponer añadir complejidad adicional al sistema, podría entorpecer los esfuerzos por hacer grandes cambios estructurales.
