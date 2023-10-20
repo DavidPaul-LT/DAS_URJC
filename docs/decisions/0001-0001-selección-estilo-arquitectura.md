@@ -1,6 +1,6 @@
 # 0001-Selección-Estilo-Arquitectura
 
-* Status: proposed
+* Status: accepted
 * Deciders: Ángel, Cristian
 * Date: 2023-10-18
 
@@ -10,9 +10,9 @@ Hay que establecer un estilo arquitectónico para el sistema de la compañía de
 
 ## Decision Drivers
 
-* RF01 - Reemplazar la arquitectura existente del sistema Se pretende reemplazar la arquitectura monolítica con la que contaba el sistema por una basada en microservicios.
-* RF02 - División del sistema en componentes El sistema incorporará los componentes de clientes, pedidos, repartos, rutas de reparto, estadísticas, incidencias y pagos.
-* RF03 - Creación de un componente para la gestión de los pedidos Es necesario incorporar un componente que sirva de intermediario entre los componentes de clientes, pedidos, reparto e incidencias.
+* RF01 - Se pretende reemplazar la arquitectura monolítica con la que contaba el sistema por una basada en microservicios.
+* RF02 - El sistema incorporará los componentes de clientes, pedidos, repartos, rutas de reparto, estadísticas, incidencias y pagos.
+* RF03 - Es necesario incorporar un componente que sirva de intermediario entre los componentes de clientes, pedidos, reparto e incidencias.
 
 ## Considered Options
 
@@ -21,7 +21,17 @@ Hay que establecer un estilo arquitectónico para el sistema de la compañía de
 
 ## Decision Outcome
 
-Chosen option: ""
+Chosen option: "0001-1-Arquitectura-Cliente-Servidor-tres-capas", because Ofrece más ventajas comparada a la arquitectura C/S de 2 capas.
+
+### Positive Consequences
+
+* La seguridad de las bases de datos se ve mejorada ya que se encuentra en una capa independiente del servidor.
+* Mejora en la escalabilidad del producto.
+* Fallos en las bases de datos no afectan al servidor.
+
+### Negative Consequences
+
+* Requerimiento de una comunicación efectiva entre capas para evitar sobrecarga en el servidor.
 
 ## Pros and Cons of the Options
 
