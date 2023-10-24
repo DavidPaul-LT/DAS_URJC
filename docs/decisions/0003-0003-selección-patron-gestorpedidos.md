@@ -19,13 +19,7 @@ Hay que establecer un patrón de diseño que resuelva la problemática de coordi
 
 ## Decision Outcome
 
-Chosen option:
-
-### Positive Consequences
-
-
-### Negative Consequences
-
+Chosen option: ""
 
 ## Pros and Cons of the Options
 
