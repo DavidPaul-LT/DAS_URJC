@@ -1,6 +1,6 @@
 # 0002-Selección-Patrón-Servidor
 
-* Status: proposed
+* Status: accepted
 * Deciders: Ángel, Cristian
 * Date: 2023-10-24
 
@@ -20,7 +20,15 @@ Una vez seleccionada y aplicada la estructura externa del servidor, es el moment
 
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "0002-2-Gateway-con-Service-Discovery", because Nos otorga más unificación dentro del servidor y capacidad de implementación más libre.
+
+### Positive Consequences
+
+* El modelo se verá más libre a la hora de conectar al servidor. Se pueden implementar más cosas en la conexión al servidor.
+
+### Negative Consequences
+
+* Toma más tiempo de implementación que la otra elección.
 
 ## Pros and Cons of the Options
 
