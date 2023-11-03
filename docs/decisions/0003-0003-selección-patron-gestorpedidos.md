@@ -1,6 +1,6 @@
 # 0003-Selección-Patrón-GestorPedidos
 
-* Status: proposed
+* Status: accepted
 * Deciders: Ángel, Cristian
 * Date: 2023-10-24
 
@@ -19,7 +19,15 @@ Hay que establecer un patrón de diseño que resuelva la problemática de coordi
 
 ## Decision Outcome
 
-Chosen option: ""
+Chosen option: "0003-1-Patrón-Mediator", because es la mejor opción de las propuestas.
+
+### Positive Consequences
+
+* El Mediator no comprometerá tanto la seguridad de los microservicios implicados en la acción del Mediator pues este mismo patrón no interfiere con los mensajes enviados, solo los transfiere al receptor.
+
+### Negative Consequences
+
+* Debido a que existe un Load Balancer dentro de la arquitectura del servidor, el Mediator puede ser capaz de enrevesar el interior de la capa de servidor.
 
 ## Pros and Cons of the Options
 
