@@ -1,6 +1,6 @@
 # Selección Tipo Middleware
 
-* Status: proposed
+* Status: accepted
 * Deciders: Ángel, Cristian
 * Date: 2023-11-07
 
@@ -22,7 +22,16 @@ En la implementación del servidor en UML, existe un "middleware" que conecta la
 
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "0004-1-Middleware-de-datos", because Es la opción que más encaja con el proyecto actual.
+
+### Positive Consequences
+
+* Habilita a las bases de datos una seguridad importante debido a la encapsulación.
+* Se abre paso a la posible utilización de peticiones síncronas y asíncronas. Esto implica una mejor implementación en el sistema si hecho correctamente.
+
+### Negative Consequences
+
+* Los arquitectos juniors pueden tener varios problemas a la hora de implementar este middleware. Es probable que se requiera alquilar un middleware de datos por internet, lo que supone pagos añadidos.
 
 ## Pros and Cons of the Options
 

@@ -1,6 +1,6 @@
 # Patrón Selección Rutas
 
-* Status: proposed
+* Status: accepted
 * Deciders: Ángel, Cristian
 * Date: 2023-11-07
 
@@ -20,7 +20,16 @@ El componente de rutas precisa de 2 implementaciones de algoritmos de optimizaci
 
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "0005-1-Patrón-Strategy", because el producto final es más firme que con el resto de opciones.
+
+### Positive Consequences
+
+* Existe más flexibilidad a la hora de implementar los algoritmos, lo que da paso a algo de libertad para realizar los algoritmos.
+* Existe la encapsulación eficiente de los algoritmos utilizados, que evita el compromiso en caso de fallo o brecha de seguridad.
+
+### Negative Consequences
+
+* Habría que implementar algoritmos suficientes y, en caso de que no sean suficientes, estudiar la eficiencia de estos puesto que el patrón podría llegar a ser inútil si no se hace correctamente.
 
 ## Pros and Cons of the Options
 
